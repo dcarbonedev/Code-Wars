@@ -27,3 +27,19 @@
 // 7. Milkshake
 // 8. Coke
 
+function getOrder(input) {
+  let foods = ['burger', 'fries', 'chicken', 'pizza', 'sandwich', 'onionrings', 'milkshake', 'coke'];
+  let result = [];
+  for(let i = 0; i < foods.length; i++) {
+    let searchStartIdx = 0;
+    let foodStartIdx = 0;
+    while(foodStartIdx !== -1) {
+      foodStartIdx = input.indexOf(foods[i], searchStartIdx);
+      if(foodStartIdx !== -1) {
+        result.push(input.slice(foodStartIdx, foodStartIdx + foods[i].length));
+        searchStartIdx = foodStartIdx + foods[i].length;
+      }
+    }
+  }
+  return result.map((e,i) => e[0].toUpperCase() + e.slice(1)).join(' ');
+}
