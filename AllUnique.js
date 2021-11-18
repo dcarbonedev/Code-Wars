@@ -6,3 +6,4 @@
 // The string may contain any of the 128 ASCII characters. Characters are case-sensitive, 
 // e.g. 'a' and 'A' are considered different characters.
 
+let hasUniqueChars = str => str === Array.from(new Set(str)).join('');
