@@ -17,3 +17,4 @@
 
 // Simple. Good luck.
 
+const modifyMultiply = (s,l,n) => new Array(n).fill(s.split(' ')[l]).join('-');
