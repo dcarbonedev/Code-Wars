@@ -1,4 +1,3 @@
-// 7 kyu
 // Testing 1-2-3
 
 // Your team is writing a fancy new text editor and you've been tasked with implementing 
