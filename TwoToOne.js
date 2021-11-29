@@ -1,4 +1,3 @@
-// 7 kyu
 // Two to One
 
 // Take 2 strings s1 and s2 including only letters from ato z. Return a new sorted 
