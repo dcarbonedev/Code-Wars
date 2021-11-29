@@ -1,4 +1,3 @@
-// 6 kyu
 // Two Sum
 
 // Write a function that takes an array of numbers (integers for the tests) and a target number. It should 
