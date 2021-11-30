@@ -1,4 +1,3 @@
-// 6 kyu
 // Who likes it?
 
 // You probably know the "like" system from Facebook and other pages. People can "like" 
