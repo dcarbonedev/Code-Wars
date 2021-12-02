@@ -1,4 +1,3 @@
-// 7 kyu
 // You're a square!
 
 // A square of squares
