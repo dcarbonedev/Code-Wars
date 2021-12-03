@@ -1,4 +1,3 @@
-// 6 kyu
 // Your order, please
 
 // Your task is to sort a given string. Each word in the string will contain a single 
