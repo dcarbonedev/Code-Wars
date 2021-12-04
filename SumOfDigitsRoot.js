@@ -1,4 +1,3 @@
-// 6 kyu
 // Sum of Digits / Digital Root
 
 // Digital root is the recursive sum of all the digits in a number.

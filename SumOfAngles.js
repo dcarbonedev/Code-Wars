@@ -1,4 +1,3 @@
-// 7 kyu
 // Sum of angles
 
 // Find the total sum of internal angles (in degrees) in an n-sided simple polygon. 
