@@ -1,4 +1,3 @@
-// 7 kyu
 // Sum of the first nth term of Series
 
 // Task:
