@@ -1,4 +1,3 @@
-// 7 kyu
 // Sum of numerous arguments
 
 // After calling the function findSum() with any number of non-negative integer 

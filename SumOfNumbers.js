@@ -1,4 +1,3 @@
-// 7 kyu
 // Beginner Series #3 Sum of Numbers
 
 // Given two integers a and b, which can be positive or negative, find the sum of all 
