@@ -1,4 +1,3 @@
-// 7 kyu
 // Sum of a sequence
 
 // Your task is to make function, which returns the sum of a sequence of integers.
