@@ -1,4 +1,3 @@
-// 7 kyu
 // Thinkful - String Drills: Repeater
 
 // Write a function named repeater() that takes two arguments (a string and a number), 
