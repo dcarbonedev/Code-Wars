@@ -1,4 +1,3 @@
-// 7 kyu
 // String Merge!
 
 // Given two words and a letter, return a single word that's a combination of 
