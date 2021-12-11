@@ -1,4 +1,3 @@
-// 7 kyu
 // Sum of two lowest positive integers
 
 // Create a function that returns the sum of the two lowest positive numbers given an 

@@ -1,4 +1,3 @@
-// 8 kyu
 // Sum Arrays
 
 // Write a function that takes an array of numbers and returns the sum of the 
