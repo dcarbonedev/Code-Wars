@@ -1,4 +1,3 @@
-// 6 kyu
 // Take a Number And Sum Its Digits Raised To The Consecutive Powers And ....¡Eureka!!
 
 // The number 89 is the first integer with more than one digit that fulfills the property partially 

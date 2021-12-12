@@ -1,4 +1,3 @@
-// 7 kyu
 // Summing a number's digits
 
 // Write a function named sumDigits which takes a number as input and returns the sum of the 
