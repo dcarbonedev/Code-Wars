@@ -1,4 +1,3 @@
-// 7 kyu
 // Sort Numbers
 
 // Finish the solution so that it sorts the passed in array of numbers. If the 
