@@ -1,4 +1,3 @@
-// 6 kyu
 // Sort the odd
 
 // Task

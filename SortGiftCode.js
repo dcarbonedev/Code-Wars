@@ -1,4 +1,3 @@
-// 7 kyu
 // Sort the Gift Code
 
 // Happy Holidays fellow Code Warriors!
