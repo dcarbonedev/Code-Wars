@@ -1,4 +1,3 @@
-// 8 kyu
 // Square(n) Sum
 
 // Complete the square sum function so that it squares each number 
