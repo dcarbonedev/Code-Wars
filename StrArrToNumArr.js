@@ -1,4 +1,3 @@
-// 7 kyu
 // Convert an array of strings to array of numbers
 
 // Oh no!
