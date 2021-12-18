@@ -1,4 +1,3 @@
-// 7 kyu
 // Reverse words
 
 // Complete the function that accepts a string parameter, and reverses each word in the 
