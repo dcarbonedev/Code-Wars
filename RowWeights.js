@@ -1,4 +1,3 @@
-// 7 kyu
 // Row Weights
 
 // Scenario
