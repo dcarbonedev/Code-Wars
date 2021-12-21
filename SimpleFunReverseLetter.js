@@ -1,4 +1,3 @@
-// 7 kyu
 // Simple Fun #176: Reverse Letter
 
 // Task
