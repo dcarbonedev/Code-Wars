@@ -1,4 +1,3 @@
-// 8 kyu
 // Beginner Series #1 School Paperwork
 
 // Your classmates asked you to copy some paperwork for them. You know that there are 
