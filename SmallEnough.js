@@ -1,4 +1,3 @@
-// 7 kyu
 // Small enough? - Beginner
 
 // You will be given an array and a limit value. You must check that all 
