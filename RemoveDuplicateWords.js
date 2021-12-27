@@ -1,4 +1,3 @@
-// 7 kyu
 // Remove duplicate words
 
 // Your task is to remove all duplicate words from a string, leaving only single (first) 
