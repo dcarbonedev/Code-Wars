@@ -1,4 +1,3 @@
-// 6 kyu
 // Replace With Alphabet Position
 
 // Welcome.
