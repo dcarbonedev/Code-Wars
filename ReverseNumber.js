@@ -1,4 +1,3 @@
-// 7 kyu
 // Reverse a Number
 
 // Given a number, write a function to output its reverse digits. (e.g. given 123 the 
