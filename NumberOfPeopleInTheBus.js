@@ -1,4 +1,3 @@
-// 7 kyu
 // Number of People in the Bus
 
 // There is a bus moving in the city, and it takes and drop some people in each bus stop.
