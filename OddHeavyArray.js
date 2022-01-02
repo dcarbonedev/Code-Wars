@@ -1,4 +1,3 @@
-// 6 kyu
 // Odd-heavy Array
 
 // An array is defined to be odd-heavy if it contains at least one odd element and every 
