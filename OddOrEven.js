@@ -1,4 +1,3 @@
-// 7 kyu
 // Odd or Even?
 
 // Task:
