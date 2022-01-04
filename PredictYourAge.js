@@ -1,4 +1,3 @@
-// 7 kyu
 // Predict your age!
 
 // My grandfather always predicted how old people would get, and right before he passed 
