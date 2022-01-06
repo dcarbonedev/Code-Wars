@@ -1,4 +1,3 @@
-// 7 kyu
 // Alternate case
 
 // Write function alternateCase which switch every letter in string from upper to lower 
