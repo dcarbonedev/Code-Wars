@@ -1,4 +1,3 @@
-// 6 kyu
 // Are they the "same"?
 
 // Given two arrays a and b write a function comp(a, b) (orcompSame(a, b)) that checks 
