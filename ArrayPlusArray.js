@@ -1,4 +1,3 @@
-// 8 kyu
 // Array plus array
 
 // I'm new to coding and now I want to get the sum of two arrays...actually the sum of 
