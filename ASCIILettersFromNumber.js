@@ -1,4 +1,3 @@
-// 7 kyu
 // ASCII letters from Number
 
 // You have to create a function that converts integer given as string into ASCII 
