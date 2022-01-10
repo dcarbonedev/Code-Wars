@@ -1,4 +1,3 @@
-// 8 kyu
 // Beginner Series #2 Clock
 
 // Clock shows h hours, m minutes and s seconds after midnight.
