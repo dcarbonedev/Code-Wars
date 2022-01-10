@@ -1,4 +1,3 @@
-// 7 kyu
 // Bingo ( Or Not )
 
 // For this game of BINGO, you will receive a single array of 10 numbers from 1 to 26 as an input. 
