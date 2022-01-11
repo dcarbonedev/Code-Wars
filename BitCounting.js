@@ -1,4 +1,3 @@
-// 6 kyu
 // Bit Counting
 
 // Write a function that takes an integer as input, and returns the number of bits that 
