@@ -1,4 +1,3 @@
-// 8 kyu
 // Convert a Boolean to a String
 
 // Implement a function which convert the given boolean value into its string 

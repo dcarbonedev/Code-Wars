@@ -1,4 +1,3 @@
-// 7 kyu
 // Boiled Eggs
 
 // You are the greatest chef on earth. No one boils eggs like you! Your restaurant is 
