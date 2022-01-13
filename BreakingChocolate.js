@@ -1,4 +1,3 @@
-// 7 kyu
 // Breaking chocolate problem
 
 // Your task is to split the chocolate bar of given dimension n x m into small squares. 
