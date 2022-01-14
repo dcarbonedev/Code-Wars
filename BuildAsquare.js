@@ -1,4 +1,3 @@
-// 7 kyu
 // Build a square
 
 // I will give you an integer. Give me back a shape that is as long and wide as the 
