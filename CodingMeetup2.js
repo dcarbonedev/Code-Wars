@@ -1,4 +1,3 @@
-// 7 kyu
 // Coding Meetup #2 - Higher-Order Functions Series - Greet developers
 
 // You will be given an array of objects (associative arrays in PHP, tables in COBOL) 
