@@ -1,4 +1,3 @@
-// 8 kyu
 // Capitalization and Mutability
 
 // Your coworker was supposed to write a simple helper function to capitalize a string 
