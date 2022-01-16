@@ -1,4 +1,3 @@
-// 6 kyu
 // CamelCase Method
 
 // Write simple .camelCase method (camel_case function in PHP, CamelCase in C# or camelCase in Java) for 
