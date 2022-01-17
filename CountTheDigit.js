@@ -1,4 +1,3 @@
-// 7 kyu
 // Count the Digit
 
 // Take an integer n (n >= 0) and a digit d (0 <= d <= 9) as an integer.
