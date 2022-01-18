@@ -1,4 +1,3 @@
-// 8 kyu
 // Counting sheep...
 
 // Consider an array/list of sheep where some sheep may be missing from their place. 
