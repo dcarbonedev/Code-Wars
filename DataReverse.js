@@ -1,4 +1,3 @@
-// 6 kyu
 // Data Reverse
 
 // A stream of data is received and needs to be reversed.
