@@ -1,4 +1,3 @@
-// 8 kyu
 // Count the Monkeys!
 
 // You take your son to the forest to see the monkeys. You know that there are a certain 

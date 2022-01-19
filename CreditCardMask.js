@@ -1,4 +1,3 @@
-// 7 kyu
 // Credit Card Mask
 
 // Usually when you buy something, you're asked whether your credit card number, phone number
