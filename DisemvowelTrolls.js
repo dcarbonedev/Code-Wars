@@ -1,4 +1,3 @@
-// 7 kyu
 // Disemvowel Trolls
 
 // Trolls are attacking your comment section!
