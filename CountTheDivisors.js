@@ -1,4 +1,3 @@
-// 7 kyu
 // Count the divisors of a number
 
 // Count the number of divisors of a positive integer n.
