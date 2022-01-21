@@ -1,4 +1,3 @@
-// 8 kyu
 // String cleaning
 
 // Your boss decided to save money by purchasing some cut-rate optical character 
