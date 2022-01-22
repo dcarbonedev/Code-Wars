@@ -1,4 +1,3 @@
-// 8 kyu
 // DNA to RNA Conversion
 
 // Deoxyribonucleic acid, DNA is the primary information storage molecule in biological 
