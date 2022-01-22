@@ -1,4 +1,3 @@
-// 7 kyu
 // Don't give me five!
 
 // Don't give me five!
