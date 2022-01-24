@@ -1,4 +1,3 @@
-// 7 kyu
 // Find the divisors!
 
 // Create a function named divisors/Divisors that takes an integer n > 1 and returns an 
