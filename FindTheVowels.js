@@ -1,4 +1,3 @@
-// 7 kyu
 // Find the vowels
 
 // We want to know the index of the vowels in a given word, for example, 

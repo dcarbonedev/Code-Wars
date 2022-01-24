@@ -1,4 +1,3 @@
-// 6 kyu
 // Find The Parity Outlier
 
 // You are given an array (which will have a length of at least 3, but could be very 
