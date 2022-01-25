@@ -1,4 +1,3 @@
-// 7 kyu
 // Find the stray number
 
 // You are given an odd-length array of integers, in which all of them are the same, 

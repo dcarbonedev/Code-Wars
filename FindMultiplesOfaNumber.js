@@ -1,4 +1,3 @@
-// 8 kyu
 // Find Multiples of a Number
 
 // In this simple exercise, you will build a program that takes a value, integer , 
