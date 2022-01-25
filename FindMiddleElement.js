@@ -1,4 +1,3 @@
-// 7 kyu
 // Find the middle element
 
 // As a part of this Kata, you need to create a function that when provided with a triplet, 
