@@ -1,4 +1,3 @@
-// 8 kyu
 // Function 1 - hello world
 
 // Description:
