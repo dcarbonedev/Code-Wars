@@ -1,4 +1,3 @@
-// 8 kyu
 // Freudian translator
 
 // You probably know the 42 number as "The answer to life, the universe and everything" 
