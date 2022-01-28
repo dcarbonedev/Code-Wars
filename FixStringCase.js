@@ -1,4 +1,3 @@
-// 7 kyu
 // Fix string case
 
 // In this Kata, you will be given a string that may have mixed uppercase and 
