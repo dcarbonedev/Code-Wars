@@ -1,4 +1,3 @@
-// 7 kyu
 // Folding your way to the moon
 
 // Have you heard about the myth that if you fold a paper enough times, you can reach the 

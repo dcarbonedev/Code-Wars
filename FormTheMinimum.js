@@ -1,4 +1,3 @@
-// 7 kyu
 // Form The Minimum
 
 // Task
