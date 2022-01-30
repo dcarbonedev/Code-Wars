@@ -1,4 +1,3 @@
-// 7 kyu
 // Highest and Lowest
 
 // In this little assignment you are given a string of space separated numbers, and have to 
