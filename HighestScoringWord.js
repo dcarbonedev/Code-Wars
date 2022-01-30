@@ -1,4 +1,3 @@
-// 6 kyu
 // Highest Scoring Word
 
 // Given a string of words, you need to find the highest scoring word.

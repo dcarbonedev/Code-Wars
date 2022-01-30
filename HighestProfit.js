@@ -1,4 +1,3 @@
-// 7 kyu
 // The highest profit wins!
 
 // Story
