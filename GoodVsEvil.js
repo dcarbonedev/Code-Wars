@@ -1,4 +1,3 @@
-// 6 kyu
 // Good vs Evil
 
 // Description
