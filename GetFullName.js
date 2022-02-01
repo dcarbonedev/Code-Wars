@@ -1,4 +1,3 @@
-// 7 kyu
 // FIXME: Get Full Name
 
 // The code provided is supposed return a person's Full Name given their first and last 
