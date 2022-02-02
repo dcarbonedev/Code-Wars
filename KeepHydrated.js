@@ -1,4 +1,3 @@
-// 8 kyu
 // Keep Hydrated!
 
 // Nathan loves cycling.
