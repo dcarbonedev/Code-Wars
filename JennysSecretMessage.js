@@ -1,4 +1,3 @@
-// 8 kyu
 // Jenny's secret message
 
 // Jenny has written a function that returns a greeting for a user. However, she's in 

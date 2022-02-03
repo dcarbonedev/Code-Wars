@@ -1,4 +1,3 @@
-// 7 kyu
 // Jaden Casing Strings
 
 // Jaden Smith, the son of Will Smith, is the star of films such as The Karate Kid 
