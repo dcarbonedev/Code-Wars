@@ -1,4 +1,3 @@
-// 7 kyu
 // Is this a triangle?
 
 // Implement a function that accepts 3 integer values a, b, c. The function should 

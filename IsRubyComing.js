@@ -1,4 +1,3 @@
-// 7 kyu
 // Coding Meetup #3 - Higher-Order Functions Series - Is Ruby coming?
 
 // You will be given an array of objects (associative arrays in PHP) representing data 
