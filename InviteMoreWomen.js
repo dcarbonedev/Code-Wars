@@ -1,4 +1,3 @@
-// 7 kyu
 // Simple Fun #152: Invite More Women?
 
 // Task

@@ -1,4 +1,3 @@
-// 6 kyu
 // IP Validation
 
 // Write an algorithm that will identify valid IPv4 addresses in dot-decimal format. IPs 
