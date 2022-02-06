@@ -1,4 +1,3 @@
-// 8 kyu
 // How good are you really?
 
 // There was a test in your class and you passed it. Congratulations!
