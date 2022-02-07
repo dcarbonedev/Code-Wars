@@ -1,4 +1,3 @@
-// 7 kyu
 // Most digits
 
 // Find the number with the most digits.

@@ -1,4 +1,3 @@
-// 8 kyu
 // Get the mean of an array
 
 // It's the academic year's end, fateful moment of your school report. The averages 
