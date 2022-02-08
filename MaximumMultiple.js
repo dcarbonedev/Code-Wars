@@ -1,4 +1,3 @@
-// 7 kyu
 // Maximum Multiple
 
 // Task
