@@ -1,4 +1,3 @@
-// 7 kyu
 // max diff - eas
 
 // You must implement a function that returns the difference between the largest and the 
