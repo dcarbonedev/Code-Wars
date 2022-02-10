@@ -1,4 +1,3 @@
-// 7 kyu
 // List Filtering
 
 // In this kata you will create a function that takes a list of non-negative integers 

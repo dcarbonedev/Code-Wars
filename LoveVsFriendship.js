@@ -1,4 +1,3 @@
-// 7 kyu
 // Love vs friendship
 
 // If　a = 1, b = 2, c = 3 ... z = 26
