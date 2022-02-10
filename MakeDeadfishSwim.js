@@ -1,4 +1,3 @@
-// 6 kyu
 // Make the Deadfish Swim
 
 // Write a simple parser that will parse and run Deadfish.
