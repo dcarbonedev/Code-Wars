@@ -1,4 +1,3 @@
-// 7 kyu
 // Largest pair sum in array
 
 // Given a sequence of numbers, find the largest pair sum in the sequence.
