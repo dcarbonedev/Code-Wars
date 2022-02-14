@@ -1,4 +1,3 @@
-// 6 kyu
 // Multiplication table
 
 // Your task, is to create NxN multiplication table, of size provided in parameter.

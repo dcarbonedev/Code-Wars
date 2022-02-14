@@ -1,4 +1,3 @@
-// 8 kyu
 // Multiplication table for number
 
 // Your goal is to return multiplication table for number that is always an 
