@@ -35,3 +35,14 @@ function sortArray(array) {
 }
 
 
+//**************************//
+// Probably the best version 
+// Most readable and best performance
+function sortArray(array) {
+  // THIS SORT ONLY HAS TO RUN ONCE!
+  // MORE EFFICIENT THAN "The Code Wars way"
+  let odds = array.filter(e => e % 2).sort((a,b) => a-b);
+  let oddsRemoved = array.map(e => e % 2 ? '' : e);
+  let oddsCount = 0;
+  return oddsRemoved.map(e => e === '' ? odds[oddsCount++] : e);
+}
