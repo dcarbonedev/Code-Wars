@@ -17,3 +17,9 @@
 //   { firstName: 'Jayden', lastName: 'P.', country: 'Jamaica', continent: 'Americas', age: 42, language: 'JavaScript' }
 // ];
 
+function isRubyComing(list) {
+  for(let dev of list) {
+    if(dev.language === 'Ruby') return true;
+  }
+  return false;
+}
