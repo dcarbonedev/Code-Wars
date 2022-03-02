@@ -19,3 +19,9 @@
 
 // The input array will always be valid and formatted as in the example above.
 
+function getFirstPython(list) {
+  for(let dev of list) {
+    if(dev.language === 'Python') return `${dev.firstName}, ${dev.country}`
+  }
+  return 'There will be no Python developers';
+}
