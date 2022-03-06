@@ -17,3 +17,13 @@
 // yell at them by returning null (or whatever equivalent in your language). In Shell 
 // please return None. In C and COBOL please return -1.
 
+function foldTo(distance) {
+  if(distance < 0) return null;
+  let count = 0;
+  let thickness = 1;
+  while(thickness < distance*10000) {
+    thickness *= 2;
+    count++;
+  }
+  return count;
+}
