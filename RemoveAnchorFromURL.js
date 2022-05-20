@@ -8,3 +8,4 @@
 // "www.codewars.com#about" --> "www.codewars.com"
 // "www.codewars.com?page=1" -->"www.codewars.com?page=1"
 
+let removeUrlAnchor = url => url.split('#')[0];
