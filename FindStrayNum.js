@@ -13,3 +13,10 @@
 // [1, 1, 2] ==> 2
 // [17, 17, 3, 17, 17, 17, 17] ==> 3
 
+function stray(numbers) {
+    let setArr = Array.from(new Set(numbers));
+    let firstNumArr = numbers.filter(e => e === setArr[0]);
+    let secondNumArr = numbers.filter(e => e === setArr[1]);
+    
+    return firstNumArr.length === 1 ? setArr[0] : setArr[1];
+}
