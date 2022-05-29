@@ -11,3 +11,4 @@
 // [1, 2, 3, -4]  //  returns 7 because 3 - (-4) == 7
 // Have fun!
 
+const maxDiff = list => list.length ? Math.max(...list) - Math.min(...list) : 0;
