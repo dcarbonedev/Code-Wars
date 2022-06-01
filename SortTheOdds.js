@@ -25,3 +25,13 @@ function sortArray(array) {
 }
 
 
+//****************************//
+// The Code Wars way
+function sortArray(array) {
+  let oddsCount = 0;
+                                          // THIS SORT IS INEFFICIENT 
+                                          // It has to run for every element 
+  return array.map(e => e % 2 ? array.filter(e => e % 2).sort((a,b) => a-b)[oddsCount++] : e);
+}
+
+
