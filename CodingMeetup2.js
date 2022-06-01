@@ -18,4 +18,9 @@
 //   { firstName: 'Madison', lastName: 'U.', country: 'United States', continent: 'Americas', age: 32, language: 'Ruby' } 
 // ];
 
- 
+function greetDevelopers(list) {
+  for(let dev of list) {
+    dev.greeting = `Hi ${dev.firstName}, what do you like the most about ${dev.language}?`
+  }
+  return list;
+}
