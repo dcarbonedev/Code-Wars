@@ -22,3 +22,4 @@
 // 5 --> 5
 // 10 --> 10
 
+let cookingTime = eggs => Math.ceil(eggs / 8) * 5;
