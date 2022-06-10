@@ -24,3 +24,12 @@
 
 // sumDigPow(90, 100) == []
 
+function sumDigPow(a, b) {
+  let result = [];
+  for(let i = a; i <= b; i++) {
+    if([...i.toString()].reduce((a, c, idx) => a + c**(idx+1) ,0) === i) {
+      result.push(i);
+    }
+  }
+  return result;
+}
