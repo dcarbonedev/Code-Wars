@@ -14,3 +14,4 @@
 
 // Note that you can receive floats as well.
 
+let toNumberArray = s => s.map(e => +e);
