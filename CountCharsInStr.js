@@ -6,3 +6,12 @@
 
 // What if the string is empty? Then the result should be empty object literal, {}.
 
+function count (string) {  
+  let obj = {
+  }
+  
+  for(let i = 0; i < string.length; i++) {
+    obj[string[i]] = Object.keys(obj).includes(string[i]) ? obj[string[i]] + 1 : 1;
+  }
+  return obj;
+}
