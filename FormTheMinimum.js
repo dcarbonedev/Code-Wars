@@ -25,3 +25,7 @@
 // (134679) is the minimum number could be formed from 
 // {1, 9, 3, 1, 7, 4, 6, 6, 7} , Without duplications
 
+function minValue(values){
+    return Number(Array.from(new Set(values)).sort((a,b) => a-b).join(''));
+}
+
