@@ -6,3 +6,11 @@
 
 // For example, when the input is green, output should be yellow.
 
+function updateLight(current) {
+  let obj = {
+    'green': 'yellow',
+    'yellow': 'red',
+    'red': 'green'
+  }
+  return obj[current];
+}
