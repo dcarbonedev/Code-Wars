@@ -11,3 +11,4 @@
 // input:  "stop Making spongebob Memes!"
 // output: "StOp mAkInG SpOnGeBoB MeMeS!"
 
+const spongeMeme = s => [...s].map((e,i) => i % 2 === 0 ? e.toUpperCase() : e.toLowerCase()).join('');
