@@ -29,3 +29,7 @@
 
 // Note : duplications are not included when summing , (i.e) the numbers added only once .
 
+function maxTriSum(numbers) {
+    let set = Array.from(new Set(numbers)).sort((a,b) => b-a);
+    return set[0]+set[1]+set[2];
+}
