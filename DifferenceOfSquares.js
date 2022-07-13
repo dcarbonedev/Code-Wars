@@ -15,3 +15,12 @@
 
 // Hence the difference between square of the sum of the first ten natural numbers and the sum of the squares of those numbes is: 3025 - 385 = 2640
 
+function differenceOfSquares(n){
+  let sqSum = 0;
+  let sumSq = 0;
+  for(let i = 1; i <= n; i++) {
+    sqSum += i;
+    sumSq += i*i;
+  }
+  return sqSum*sqSum - sumSq;
+}
