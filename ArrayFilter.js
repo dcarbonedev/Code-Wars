@@ -7,3 +7,4 @@
 
 // getEvenNumbers([2,4,5,6]) // should == [2,4,6]
 
+let getEvenNumbers = arr => arr.filter(e => !(e % 2));
