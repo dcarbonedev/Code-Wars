@@ -11,3 +11,11 @@
 // "Example Input" ==> "iNPUT eXAMPLE"
 // You may assume the input only contain English alphabet and spaces.
 
+function stringTransformer(str) {
+    return str.split(' ')
+      .reverse()
+      .map(word => word.split('')
+          .map(e => e === e.toLowerCase() ? e.toUpperCase() : e.toLowerCase())
+          .join(''))
+      .join(' ');
+}
