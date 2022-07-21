@@ -4,3 +4,4 @@
 
 // Return true if it is a factor or false if it is not.
 
+const checkForFactor = (b, f) => !(b % f);
