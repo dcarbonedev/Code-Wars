@@ -29,3 +29,14 @@
 // Let's go hunt!
 // Run away,…
 
+function babySharkLyrics(){
+  let r='',s='',a=['Baby','Mommy','Daddy','Grandma','Grandpa',"Let's go hunt"]
+  for(let i=0;i<6;i++){
+    for(let j=0;j<4;j++){
+      s=a[i]+(i==5?'':' shark')
+      s+=j==3?'!':','+' doo'.repeat(6)
+      r+=s+'\n'
+    }
+  }
+  return r+'Run away,…'
+}
