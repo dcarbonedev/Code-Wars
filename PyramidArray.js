@@ -8,3 +8,10 @@
 // pyramid(3) => [ [1], [1, 1], [1, 1, 1] ]
 // Note: the subarrays should be filled with 1s
 
+function pyramid(n) {
+  let result = [];
+  for(let i = 1; i <= n; i++) {
+    result.push(new Array(i).fill(1, 0, i));
+  }
+  return result;
+}
