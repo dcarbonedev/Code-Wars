@@ -15,3 +15,15 @@
 // encryptThis("good") === "103doo"
 // encryptThis("hello world") === "104olle 119drlo"
 
+var encryptThis = function(text) {
+  let result = [];
+  let arr = text.split(' ');
+  for(let word of arr) {
+    console.log('word:', word);
+    result.push(word.charCodeAt(0) + 
+           (word.length > 1 ? word[word.length-1] : '') + 
+           (word.slice(2, word.length-1) || '') + 
+           (word.length > 2 ? word[1] : '')  );
+  }
+  return result.join(' ');
+}
