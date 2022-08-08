@@ -13,3 +13,4 @@
 //   { firstName: 'Sou', lastName: 'B.', country: 'Japan', continent: 'Asia', age: 49, language: 'PHP' },
 // ];
 
+const findSenior = l => l.filter(el => el.age === Math.max(...l.map(e => e.age)));
