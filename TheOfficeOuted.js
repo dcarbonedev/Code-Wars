@@ -10,3 +10,10 @@
 
 // Note that your boss is in the room (boss), their score is worth double it's face value (but they are still just one person!).
 
+function outed(meet, boss) {
+  let count = 0;
+  for(let person in meet) {
+    count += meet[person] * (person === boss ? 2 : 1);
+  }
+  return count / Object.keys(meet).length <= 5 ? 'Get Out Now!' : 'Nice Work Champ!';
+}
