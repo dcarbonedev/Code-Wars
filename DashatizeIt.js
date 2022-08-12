@@ -11,3 +11,16 @@
 // dashatize(274) -> '2-7-4'
 // dashatize(6815) -> '68-1-5'
 
+function dashatize(num) {
+  if(!Number.isInteger(num)) return 'NaN';
+  num = Math.abs(num);
+  let arr = [...num.toString()];
+  let result = '';
+  for(let i = 0; i < arr.length; i++) {
+    result += arr[i] % 2 !== 0 ? '-' + arr[i] + '-': arr[i]; 
+  }
+  result = result.split('').filter((e,i,a) => !(a[i] === '-' && a[i+1] === '-'));
+  if(result[0] === '-') result.shift();
+  if(result[result.length-1] === '-') result.pop();
+  return result.join('');
+}
