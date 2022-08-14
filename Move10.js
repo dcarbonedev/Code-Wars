@@ -6,3 +6,7 @@
 
 // Input will be a string with length > 0.
 
+function moveTen(s) {
+    let l = 'abcdefghijklmnopqrstuvwxyz';
+    return [...s].map(e => l[(l.indexOf(e) + 10) % 26]).join('');
+}
