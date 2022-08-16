@@ -7,3 +7,4 @@
 // "riley" --> "Hello Riley!"
 // "JACK"  --> "Hello Jack!"
 
+const greet = n =>`Hello ${n[0].toUpperCase()}${n.toLowerCase().slice(1, n.length)}!`;
