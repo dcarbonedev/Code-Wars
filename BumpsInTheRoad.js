@@ -5,3 +5,4 @@
 // Unfortunately for you, your drive is very bumpy! Given a string showing either flat road (_) or bumps (n). If you are able to reach home safely by encountering 15 bumps or less, return Woohoo!, otherwise return Car Dead
 
 
+const bump = x => [...x].filter(e => e === 'n').length <= 15 ? 'Woohoo!' : 'Car Dead';
