@@ -9,3 +9,8 @@
 
 // Input will consist of alphabet characters, both uppercase and lowercase. No spaces.
 
+function solve(arr) {
+    let lower = 'abcdefghijklmnopqrstuvwxyz';
+    let upper =  'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    return arr.map(e => e.split('').reduce((a,c,i) => c === lower[i] || c === upper[i] ? a + 1 : a, 0));
+}
