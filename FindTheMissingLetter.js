@@ -15,3 +15,6 @@
 // ["O","Q","R","S"] -> "P"
 // (Use the English alphabet with 26 letters!)
 
+function findMissingLetter(arr) {
+    return String.fromCharCode(+arr.map(e => e.charCodeAt(e)).filter((e,i,a) => a[i+1] - a[i] > 1)[0] + 1);
+}
