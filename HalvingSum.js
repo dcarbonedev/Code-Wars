@@ -9,3 +9,11 @@
 // Example
 // 25  =>  25 + 12 + 6 + 3 + 1 = 47
 
+function halvingSum(n) {
+  let result = n;
+  while(n > 0) {
+    result += Math.trunc(n / 2);
+    n = Math.trunc(n / 2);
+  }
+  return result;
+}
