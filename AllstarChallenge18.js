@@ -12,3 +12,4 @@
 // ("Hello", "l")  ==>  2
 // ("", "z")       ==>  0
 
+const strCount = (s, l) => [...s].reduce((a,c) => c === l ? a + 1 : a, 0);
