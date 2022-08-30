@@ -14,3 +14,9 @@
 // Indexed capitalization
 // Even-odd disparity
 
+function capitalize(s){
+    let a = [...s].map((e,i) => !(i % 2) ? e.toUpperCase() : e.toLowerCase()).join('');
+    let b = [...s].map((e,i) =>  (i % 2) ? e.toUpperCase() : e.toLowerCase()).join('');
+    
+    return [a,b];
+};
