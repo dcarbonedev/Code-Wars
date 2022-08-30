@@ -8,3 +8,4 @@
 
 // If your language supports it, try using a switch statement.
 
+const switchItUp = n => ['Zero','One','Two','Three','Four','Five','Six','Seven','Eight','Nine'][n];
