@@ -10,3 +10,26 @@
 
 // You may assume both integers are positive integers.
 
+function add(num1, num2) {
+  num1 = [...num1.toString()].map(Number);
+  num2 = [...num2.toString()].map(Number);
+  let difference = Math.abs(num1.length - num2.length);
+  let resArr = [];
+  if(num1.length > num2.length) {
+    for(let i = 0; i < difference; i++) {
+      num2.unshift(0);
+    }
+  }
+  
+  if(num2.length > num1.length) {
+    for(let i = 0; i < difference; i++) {
+      num1.unshift(0);
+    }
+  } 
+  
+  for(let i = 0; i < Math.max(num1.length, num2.length); i++) {
+    resArr.push( (num1[i] || 0) + (num2[i] || 0) );
+  }
+  
+  return +resArr.join('');
+}
