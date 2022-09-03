@@ -8,3 +8,17 @@
 
 // 'taxi' would become 'atix' 'taxis' would become 'atxsi'
 
+function insideOut(x){
+  let words = x.split(' ');
+  for(let i = 0; i < words.length; i++) {
+    if(words[i].length % 2 === 0) {
+      words[i] = words[i].slice(0, words[i].length/2).split('').reverse().join('')
+      + words[i].slice(words[i].length - words[i].length/2).split('').reverse().join('');
+    } else {
+      words[i] = words[i].slice(0, words[i].length/2).split('').reverse().join('')
+      + words[i][(Math.floor(words[i].length/2))]
+      + words[i].slice(words[i].length - (words[i].length/2)+1).split('').reverse().join('');
+    }
+  }
+  return words.join(' ');
+}
