@@ -20,3 +20,9 @@
 // 048665088X   -->  true
 // X123456788   -->  false
 
+function validISBN10(isbn) {
+    if(isbn.length !== 10) return false;
+    if(isbn[9] !== 'X' && Number.isNaN(parseInt(isbn[9]))) return false;
+    if([...isbn].filter(  (e,i) => Number.isNaN(parseInt(e)) && i !== 9).length !== 0) return false;
+    return !([...isbn].map(e => e === 'X' ? '10' : e).reduce((a,c,i) => a + c * (i+1), 0) % 11);  
+}
