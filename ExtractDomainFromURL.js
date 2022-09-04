@@ -6,3 +6,7 @@
 // * url = "http://www.zombie-bites.com"         -> domain name = "zombie-bites"
 // * url = "https://www.cnet.com"                -> domain name = cnet"
 
+function domainName(url){
+    if(url.includes('http')) url = url.split('//').slice(1).join('');
+    return url.split('.')[url.includes('www') ? 1 : 0];
+}
