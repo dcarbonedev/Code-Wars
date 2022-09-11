@@ -14,3 +14,4 @@
 
 //   ipToInt32("128.32.10.1") => 2149583361
 
+const ipToInt32 = ip => parseInt(ip.split('.').map(e => Number(e).toString(2).padStart(8, '0')).join(''), 2);
