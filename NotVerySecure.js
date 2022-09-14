@@ -8,3 +8,10 @@
 // Allowed characters are uppercase / lowercase latin letters and digits from 0 to 9
 // No whitespaces / underscore
 
+function alphanumeric(string){
+  let test = string.toLowerCase().split('').filter(e => {
+    return (e.charCodeAt(0) >= 97 && e.charCodeAt(0) <= 122) 
+          || (e.charCodeAt(0) >= 48 && e.charCodeAt(0) <= 57);
+  }).join('');
+  return test.length === string.length && string.length !== 0; 
+}
