@@ -21,3 +21,12 @@
 
 // giveChange(217) // => [2,1,1,0,0,2]
 
+function giveChange(amount) {
+  let result = [];
+  let bills = [100, 50, 20, 10, 5, 1];
+  for(let i = 0; i <= 5; i++) {
+    result.push((amount - (amount % bills[i])) / bills[i]);
+    amount -= amount - (amount % bills[i]);
+  }
+  return result.reverse();
+}
