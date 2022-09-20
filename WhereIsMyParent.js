@@ -8,3 +8,13 @@
 // Task:
 // Place all people in alphabetical order where Mothers are followed by their children, i.e. "aAbaBb" => "AaaBbb".
 
+function findChildren(dancingBrigade) {
+	let letters = [...dancingBrigade];
+  let result = '';
+  for(let i = 65; i <= 90; i++) {
+    result += letters.filter(e => {
+      return e === String.fromCharCode(i) || e === String.fromCharCode(i).toLowerCase();      
+    }).sort().join('');
+  }
+  return result;
+}
