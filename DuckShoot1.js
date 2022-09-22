@@ -16,3 +16,7 @@
 
 // All inputs will be correct type and never empty.
 
+function duckShoot(ammo, aim, ducks) {
+    for(let i = 0; i < Math.floor(ammo*aim); i++) ducks = ducks.replace('2', 'X');
+    return ducks;
+}
