@@ -35,3 +35,5 @@ function twistedSum(n) {
   return sum;
 }
 
+// Never go full Codewars
+const twistedSum = n => Array.from(new Array(n+1).keys()).slice(1).map(String).join('').split('').reduce((a,c) => a + +c, 0);
