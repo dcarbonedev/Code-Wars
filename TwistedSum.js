@@ -13,3 +13,12 @@
 // 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + (1 + 0) + (1 + 1) + (1 + 2) = 51
 
 
+// Using strings
+function twistedSum(n) {
+  let str = '';
+  for(let i = 1; i <= n; i++) {
+    str += i;
+  }
+  return [...str].reduce((a,c) => a + +c, 0);
+}
+
