@@ -6,3 +6,4 @@
 
 // You should not remove or add elements from/to the array.
 
+const twoSort = s => s.sort()[0].split('').join('***');
