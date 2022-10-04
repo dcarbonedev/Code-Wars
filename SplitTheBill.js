@@ -21,3 +21,17 @@
 
 // splitTheBill(group) // returns {A: 5, B: 0, C: -5}
 
+function splitTheBill(x) {
+  let sum = 0;
+  for(let person in x) {
+    sum += x[person];
+  }
+  for(let person in x) {
+    if(sum % Object.keys(x).length === 0) {
+      x[person] = x[person] - (sum / Object.keys(x).length);
+    } else {
+      x[person] = Number((x[person] - (sum / Object.keys(x).length)).toFixed(2));
+    }
+  }
+  return x;
+}
