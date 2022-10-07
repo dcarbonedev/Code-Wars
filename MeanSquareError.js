@@ -11,3 +11,10 @@
 // [10, 20, 10, 2], [10, 25, 5, -2]  -->  16.5 because (0 + 25 + 25 + 16) / 4
 // [-1, 0], [0, -1]                  -->   1   because (1 + 1) / 2
 
+var solution = function(arr1, arr2) {
+  let sum = 0;
+  for(let i = 0; i < arr1.length; i++) {
+    sum += Math.abs(arr1[i] - arr2[i])**2;
+  }
+  return sum / arr1.length;
+}
