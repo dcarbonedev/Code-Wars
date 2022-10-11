@@ -22,3 +22,10 @@ function bingo(ticket, win) {
     return miniWins >= win ? 'Winner!' : 'Loser!';
 }
 
+// Using map method and no outside variable
+function bingo(ticket, win) {
+  return ticket
+    .map(e => e[0].includes(String.fromCharCode(e[1])) ? 1 : 0)
+    .reduce((a,c) => a+c, 0) 
+  >= win ? 'Winner!' : 'Loser!';
+}
