@@ -6,3 +6,11 @@
 // 2, 5  -->  [2, 4, 16, 256, 65536]
 // 3, 3  -->  [3, 9, 81]
 
+function squares(x, n) {
+  let result = [];
+  for(let i = 1; i <= n; i++) {
+    if(i > 1) x *= x;
+    result.push(x);
+  }
+  return result;
+}
