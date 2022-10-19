@@ -36,3 +36,18 @@
 // NOT COMPLETE!
 // still need to check 2nd and 3rd case (columns and 3x3 blocks)
 
+function validSolution(board) {
+  let valid = '123456789';
+  console.log('----', board);
+  
+  for(let row = 0; row < 9; row++) {
+    let temp = board[row].slice();
+    temp.sort();
+    if(temp.join('') !== valid) {
+      return false;
+    }
+  }
+  
+  
+  return true;
+}
