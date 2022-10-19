@@ -34,7 +34,7 @@
 // ]); // => false
 
 // NOT COMPLETE!
-// still need to check 2nd and 3rd case (columns and 3x3 blocks)
+// still need to check 3rd case (3x3 blocks)
 
 function validSolution(board) {
   let valid = '123456789';
@@ -47,7 +47,14 @@ function validSolution(board) {
       return false;
     }
   }
-  
+  for(let col = 0; col < 9; col++) {
+    let temp = '';
+    for(let row = 0; row < 9; row++) {
+      temp += board[col][row];
+    }
+    temp = temp.split('').sort().join('');
+    if(temp !== valid) return false; 
+  }
   
   return true;
 }
