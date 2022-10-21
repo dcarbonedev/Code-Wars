@@ -33,13 +33,10 @@
 //   [3, 0, 0, 4, 8, 1, 1, 7, 9]
 // ]); // => false
 
-// NOT COMPLETE!
-// still need to check 3rd case (3x3 blocks)
-
 function validSolution(board) {
   let valid = '123456789';
-  console.log('----', board);
   
+  // check rows
   for(let row = 0; row < 9; row++) {
     let temp = board[row].slice();
     temp.sort();
@@ -47,13 +44,28 @@ function validSolution(board) {
       return false;
     }
   }
+  
+  // check columns
   for(let col = 0; col < 9; col++) {
     let temp = '';
     for(let row = 0; row < 9; row++) {
-      temp += board[col][row];
+      temp += board[row][col];
     }
     temp = temp.split('').sort().join('');
     if(temp !== valid) return false; 
+  }
+  
+  //check 3x3 "blocks"
+  for(let i = 0; i < 9; i += 3) {
+    for(let j = 0; j < 9; j += 3) {
+      let temp = '';
+      for (let k = 0; k < 3; k++) {
+        temp += board[k+j].slice(i, i+3).join('');
+      }
+      temp = temp.split('').sort().join('');
+      if(temp !== valid) return false;
+      temp = '';
+    }
   }
   
   return true;
