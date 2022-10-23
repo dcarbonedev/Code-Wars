@@ -12,3 +12,15 @@
 // |3 2 1|  +  |3 2 3|  =  |3+3 2+2 1+3|  =  |6 4 4|
 // |1 1 1|     |1 1 3|     |1+1 1+1 1+3|     |2 2 4|
 
+function matrixAddition(a, b) {
+  let result = [];
+  let row = [];
+  for(let i = 0; i < a.length; i++) {
+    for(let j = 0; j < b.length; j++) {
+      row.push(a[i][j] + b[i][j]);
+    }
+    result.push(row);
+    row = [];
+  }
+  return result;
+}
