@@ -6,3 +6,4 @@
 
 // All inputs will be valid.
 
+const switcher = x => x.map(e => 'zyxwvutsrqponmlkjihgfedcba!? '[+e - 1]).join('');
