@@ -6,3 +6,4 @@
 // If a number is odd, convert it to hex.
 // Numbers will be positive. The hexadecimal string should be lowercased.
 
+const evensAndOdds = num => num % 2 ? num.toString(16) : num.toString(2);
