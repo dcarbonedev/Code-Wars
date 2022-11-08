@@ -24,3 +24,17 @@ function solve1(arr1, arr2) {
     return arr1.filter(e => !arr2.includes(e))[0] || 0;   
 }
 
+//*** Better solution in O(n) time w/ old syntax (more readable than ES6?)  ***//
+//*** The missing number will be the difference of the sums of the 2 arrays ***//
+function solve2(arr1, arr2) {
+  let sum1 = arr1.reduce(function(a,c) {
+    return a + c;
+  }, 0);
+
+  let sum2 = arr2.reduce(function(a,c) {
+    return a + c;
+  }, 0);
+
+  return sum1 - sum2;
+}
+
