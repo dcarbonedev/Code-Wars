@@ -38,3 +38,24 @@ function solve2(arr1, arr2) {
   return sum1 - sum2;
 }
 
+//*** Same O(n) time soultion w/ full ES6, one liner syntax ***// 
+const solve3 = (a1, a2) => a1.reduce((a,c) => a + c, 0) - a2.reduce((a,c) => a + c, 0);
+
+
+//*** BEST practial solution from time complexity standpoint ***//
+// Theoretically it's still O(n) worst case but practically some //
+// cases will be O(1) because of the guard clause and the first //
+// sum using gauss's theorm cuts num of operations in half //
+function solve4(arr1, arr2) {
+  // Will exit function in O(1) time for these cases
+  if(arr1.length === arr2.length) return 0;
+  if(arr1.length === 1 && arr2.length === 0) return arr1[0];
+
+  // Summation formula makes this step O(1)
+  let sum1 = arr1[arr1.length-1] * ( (arr1[0] + arr1[arr1.length-1]) / 2 )
+
+  // This is the most expensive step at O(n)
+  let sum2 = arr2.reduce((a,c) => a + c, 0);
+
+  return sum1 - sum2;
+}
