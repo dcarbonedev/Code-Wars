@@ -21,15 +21,3 @@ function solve1(arr1, arr2) {
   return arr1.filter(n => !arr2.includes(n));
 }
 
-// Better solution because set.has() is O(1) instead of O(n)
-// Which makes the total time complexity if the function O(n)
-function solve2(arr1, arr2) {
-  // Function exits in O(1) time in these cases
-  if(arr1.length === 0 || arr2.length === 0) return arr1;
-
-  // O(n) time
-  let set = new Set(arr2);
-
-  // O(1) time
-  return arr1.filter(n => !set.has(n));
-}
