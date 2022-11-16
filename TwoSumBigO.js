@@ -19,3 +19,18 @@ function solve1(arr, target) {
     return [];
 }
 
+// single pass map/obj solution
+// total time complexity O(n)
+function solve2(arr, target) {
+  let obj = {};
+
+  for(let i = 0; i < arr.length; i++) {
+    let compliment = target - arr[i];
+    if(obj[compliment] != null) { 
+      return [obj[compliment], i];
+    } else {
+      obj[arr[i]] = i;
+    }
+  }
+  return [];
+}
