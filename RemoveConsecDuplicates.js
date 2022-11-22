@@ -6,3 +6,6 @@
 
 // --> "alpha beta gamma delta alpha beta gamma delta"
 
+const removeConsecutiveDuplicates = s => {
+    return s.split(' ').filter((e,i,a) => e !== a[i+1]).join(' ');
+}
