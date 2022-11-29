@@ -37,3 +37,10 @@
 // 1111111111111111111111
 // Hint: Use \n in string to jump to next line
 
+function pattern(n) {
+  let result = '';
+  for(let i = 1; i <= n; i++) {
+    result += (''+i).repeat(i) + (i === n ? '' : '\n');
+  }
+  return result;
+}
