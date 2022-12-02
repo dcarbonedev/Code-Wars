@@ -18,3 +18,13 @@
 
 // Enjoy it!!
 
+function nextPal(val) {
+  while(true) {
+    val++;
+    let forward = val.toString();
+    let backward = val.toString().split('').reverse().join('');
+    if(forward === backward) {
+      return val;
+    }
+  }
+}
