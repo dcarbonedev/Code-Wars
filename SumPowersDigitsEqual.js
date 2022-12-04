@@ -35,3 +35,12 @@ function eqSumPowdig(hMax, exp) {
   return result;
 }
 
+// Using javascript reduce method
+function eqSumPowdig(hMax, exp) {
+  let result = [];
+  for(let i = 2; i <= hMax; i++) {
+    let sum = i.toString().split('').reduce((a,c) => a + c**exp, 0);
+    if(sum === i) result.push(sum);
+  }
+  return result;
+}
