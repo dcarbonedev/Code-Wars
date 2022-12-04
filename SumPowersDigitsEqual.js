@@ -20,3 +20,18 @@
 // Enjoy it !!
 
 
+// Using just math
+function eqSumPowdig(hMax, exp) {
+  let result = [];
+  for(let i = 2; i <= hMax; i++) {
+    let sum = 0;
+    let num = i;
+    while(num > 0) {
+      sum += (num % 10)**exp;
+      num = Math.floor(num / 10);
+    }
+    if(sum === i) result.push(sum);
+  }
+  return result;
+}
+
