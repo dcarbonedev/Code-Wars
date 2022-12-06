@@ -19,3 +19,13 @@
 // nextNumber(9999999999) == "There is no possible number that
 // fulfills those requirements"
 
+function nextNumb(val) {
+  for(let i = val+1; i <= 999999999; i++) {
+    let str = i.toString();
+    let setStr = Array.from(new Set(str)).join('');
+    if(str === setStr && i % 2 && !(i % 3)) {
+      return i;
+    }
+  }
+  return 'There is no possible number that fulfills those requirements';
+}
