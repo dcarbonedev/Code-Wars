@@ -10,3 +10,7 @@
 // If the average length is not an integer, use Math.round().
 // The input array's length > 1
 
+function averageLength(arr) { 
+    let avg = Math.round(arr.reduce((a,c) => c.length + a, 0) / arr.length);
+    return arr.map(e => e[0].repeat(avg));
+}
