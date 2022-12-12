@@ -42,3 +42,25 @@ function mostChars2(str) {
     }
   }
 }
+
+
+// Same time complexity, no methods, pure loops
+function mostChars(str) {
+  let chars = {};
+  for(let i = 0; i < str.length; i++) {
+    if(chars[str[i]]) {
+      chars[str[i]]++;
+    }else {
+      chars[str[i]] = 1;
+    }
+  }
+  let max = 0;
+  let maxChar = null;
+  for(char in chars) {
+    if(chars[char] > max) {
+      max = chars[char];
+      maxChar = char;
+    }
+  }
+  return maxChar;
+}
