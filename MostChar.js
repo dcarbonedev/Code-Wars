@@ -21,3 +21,24 @@ function mostChars(str) {
   let highestValue = Math.max(...Object.values(obj));
   return Object.keys(obj).find(key => obj[key] === highestValue);
 }
+
+
+// Same time complexity, no array methods
+function mostChars2(str) {
+  let obj = {};
+  for(let i = 0; i < str.length; i++) {
+    if(obj[str[i]]) {
+      obj[str[i]]++;
+    }else {
+      obj[str[i]] = 1;
+    }
+  }
+  let keys = Object.keys(obj);
+  let values = Object.values(obj);
+  let highestValue = Math.max(...values);
+  for(let i = 0; i < keys.length; i++) {
+    if(values[i] === highestValue) {
+      return keys[i];
+    }
+  }
+}
