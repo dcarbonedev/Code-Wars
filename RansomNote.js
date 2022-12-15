@@ -22,3 +22,26 @@
 // });
 
 
+// O(n) time xomplexity
+function ransomNote(note, mag) {
+  let magObj = {};
+  let noteObj = {};
+  let magWords = mag.split(' ');
+  let noteWords = note.split(' ');
+  
+  for(const word of magWords) {
+    magObj[word] = magObj[word] + 1 || 1;
+  }
+
+  for(const word of noteWords) {
+    noteObj[word] = noteObj[word] + 1 || 1;
+  }
+
+  for(const word in noteObj) {
+    if(!magObj[word] || magObj[word] < noteObj[word]) {
+      return false;
+    }
+  }
+  return true;
+}
+
