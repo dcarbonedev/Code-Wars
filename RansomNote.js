@@ -45,3 +45,23 @@ function ransomNote(note, mag) {
   return true;
 }
 
+// Better solution with one less loop and one less object
+// Still O(n)
+function ransomNote(note, mag) {
+  let magObj = {};
+  let magWords = mag.split(' ');
+  let noteWords = note.split(' ');
+  
+  for(const word of magWords) {
+    magObj[word] = magObj[word] + 1 || 1;
+  }
+
+  for(const word of noteWords) {
+      if(!magObj[word] || magObj[word] < 0) {
+        return false;
+      }else {
+        magObj[word]--;
+      }
+  }
+  return true;
+}
