@@ -27,3 +27,7 @@
  * @param {string} stones
  * @return {number}
  */
+var numJewelsInStones = function(jewels, stones) {
+    let jewelsSet = new Set(jewels);
+    return stones.split('').reduce((a,c) => jewelsSet.has(c) ? a+1 : a, 0);
+};
