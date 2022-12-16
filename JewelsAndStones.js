@@ -27,6 +27,10 @@
  * @param {string} stones
  * @return {number}
  */
+
+// Jewels are always unique so we can use a set instead of an array
+// this allows us to use set.has() (O(1)) rather than arr.includes() (O(n))
+// making the whole function O(n) instead of O(n^2) time complexity
 var numJewelsInStones = function(jewels, stones) {
     let jewelsSet = new Set(jewels);
     return stones.split('').reduce((a,c) => jewelsSet.has(c) ? a+1 : a, 0);
