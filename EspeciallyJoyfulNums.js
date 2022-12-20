@@ -9,3 +9,13 @@
 // and 19 * 91 = 1729 --> the number that we started with.
 // Complete the function which tests if a positive integer n is Harshad number, and returns True if the product of its digit sum and its digit sum reversed equals n; otherwise return False.
 
+function numberJoy(n) {
+  let sum = 0;
+  let num = n;
+  while(num > 0) {
+    sum += num % 10;
+    num = Math.floor(num / 10);
+  }
+  let reversed = Number(sum.toString().split('').reverse().join(''));
+  return n === (reversed * sum);
+}
