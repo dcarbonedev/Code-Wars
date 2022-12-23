@@ -35,5 +35,11 @@
 // 1 <= m + n <= 200
 // -109 <= nums1[i], nums2[j] <= 109
 
-
+var merge = function(nums1, m, nums2, n) {
+    for(let i = 0; i < n; i++) {
+        nums1[m] = nums2[i];
+        m++;
+    }
+    nums1.sort((a,b) => a-b);
+};
 
