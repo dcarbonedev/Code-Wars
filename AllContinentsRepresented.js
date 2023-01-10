@@ -21,3 +21,10 @@
 
 // The input array and continent names will always be valid and formatted as in the list above for example 'Africa' will always start with upper-case 'A'.
 
+function allContinents(list) {
+  let continents = [];
+  for(let person of list) {
+    if(!continents.includes(person.continent)) continents.push(person.continent);
+  }
+  return continents.length >= 5;
+}
