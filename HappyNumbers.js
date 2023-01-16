@@ -27,3 +27,16 @@ function isHappy(n) {
     return true;
 }
 
+// Solution using object instead of array for better time complexity
+// arr.includes() is O(n) where obj[n] === true is O(1)
+function isHappy(n) {
+  let obj = {};
+  while(n > 1) {
+    n = n.toString().split('').reduce((a,c) => a + c**2, 0);
+    if(obj[n]) {
+      return false;
+    }
+    obj[n] = true;
+  }
+  return true;
+}
