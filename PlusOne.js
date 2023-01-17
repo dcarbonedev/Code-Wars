@@ -38,3 +38,31 @@ var plusOne = function(digits) {
 };
   
 
+// Time complexity = 0(n)
+// Same theoretical time complexity but faster in practice
+var plusOne = function(digits) {
+  // O(1)
+  digits[digits.length-1]++;
+
+  // O(n)
+  // Added break which will not help worst case time complexity
+  // but will help cases that aren't worst case
+  for(let i = digits.length-1; i >= 1; i--) {
+      if(digits[i] === 10) {
+          digits[i] = 0;
+          digits[i-1]++;
+      }else {
+          break;
+      }
+  }
+
+  // O(1)
+  // Making the first digit 1 and pushing an extra 0 to the end
+  // gives the same result as before but we get to use push instead
+  // of unshift which makes this block O(1) instead of O(n)
+  if(digits[0] === 10) {
+      digits[0] = 1;
+      digits.push(0);
+  }
+  return digits;    
+};
