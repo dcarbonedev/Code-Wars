@@ -13,3 +13,7 @@
 // Task
 // You will be given a list of numbers and their arithmetic mean. However, the list is missing one number. Using this information, you must figure out and return the geometric mean of the FULL LIST, including the number that's missing.
 
+function geo_mean(nums, a) {
+    let x = a * (nums.length+1) - nums.reduce((a,c) => a+c, 0);
+    return Math.pow([...nums, x].reduce((a,c) => a*c, 1), 1/(nums.length+1));
+}
