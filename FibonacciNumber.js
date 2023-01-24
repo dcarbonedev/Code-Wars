@@ -31,3 +31,15 @@
  * @param {number} n
  * @return {number}
  */
+var fib = function(n) {
+    if(n === 0) return 0;
+    let prev1 = 1;
+    let prev2 = 1;
+    let cur = 1;
+    for(let i = 2; i < n; i++) {
+        cur = prev1 + prev2;
+        prev1 = prev2;
+        prev2 = cur;
+    }
+    return cur;
+};
