@@ -33,3 +33,14 @@
 
 // You will be given 3 inputs corresponding to the amount of each glyph you have acquired in the game. Your task is to output the final score. Take into account that you may have no glyphs at all!
 
+function solve(c, g, t) {
+  let arr = [c, g, t];
+  let distinctSum = 0;
+  while(arr[0] > 0 && arr[1] > 0 && arr[2] > 0) {
+    distinctSum += 7;
+    arr[0]--;
+    arr[1]--;
+    arr[2]--;
+  }
+  return c**2 + g**2 + t**2 + distinctSum;
+}
