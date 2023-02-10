@@ -35,3 +35,15 @@ function computeDepth (x) {
     return count-1;
 }
 
+// Much shorter solution using an object
+function computeDepth (x) {
+  let obj = {};
+  let count = 1;
+  while(Object.keys(obj).length < 10) {
+    for(const digit of (x * count).toString()) {
+      obj[digit] = obj[digit] || 1;
+    }
+    count++;
+  }
+  return count-1;
+}
