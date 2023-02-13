@@ -22,3 +22,14 @@ function reduce(fraction) {
     return reduce(newFraction);
 }
 
+// Just for fun: way less readable codewars style code
+function reduce(f) {
+  let temp = [f[0], f[1]];
+  for(let i = 2; i <= Math.min(f[0], f[1]); i++) {
+    if(!(f[0] % i) && !(f[1] % i)) {
+      temp = [f[0]/i, f[1]/i];
+    }
+  }
+  return temp[0] === f[0] && temp[1] === f[1] ? temp : reduce(temp);
+}
+
