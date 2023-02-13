@@ -33,3 +33,14 @@ function reduce(f) {
   return temp[0] === f[0] && temp[1] === f[1] ? temp : reduce(temp);
 }
 
+// Non-recursive solution
+function reduce(f) {
+  for(let i = 2; i <= Math.min(f[0], f[1]); i++) {
+    if(!(f[0] % i) && !(f[1] % i)) {
+      f[0] = f[0] / i;
+      f[1] = f[1] / i;
+      i = 1;
+    }
+  }
+  return f;
+}
