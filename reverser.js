@@ -9,3 +9,19 @@
 //                   precision
 //                   .keys
 
+function reverse(n) {
+  let newN = n;
+  let digitCount = 0;
+  let result = 0;
+  while(newN > 0) {
+    newN = Math.floor(newN/10);
+    digitCount++;
+  }
+  let divisor = 10**(digitCount-1);
+  while(n > 0) {
+    result += (n % 10)*divisor;
+    n = Math.floor(n/10);
+    divisor /= 10;
+  }
+  return result;
+}
