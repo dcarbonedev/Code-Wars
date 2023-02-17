@@ -17,3 +17,9 @@
 
 // As long as the tests pass, go for it!
 
+var Queue = function() {
+  this.obj = {};
+  this.first = 1;
+  this.last = 1;
+};
+
