@@ -23,3 +23,18 @@ var Queue = function() {
   this.last = 1;
 };
 
+Queue.prototype.enqueue = function(item) {
+  this.obj[this.last] = item;
+  this.last++;
+};
+
+Queue.prototype.dequeue = function() {
+  let temp = this.obj[this.first];
+  delete this.obj[this.first];
+  this.first++;
+  return temp;
+};
+
+Queue.prototype.size = function() {
+  return (this.last - this.first) > 0 ? this.last - this.first : 0;
+};
