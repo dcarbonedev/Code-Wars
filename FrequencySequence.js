@@ -6,3 +6,10 @@
 // "19999999"   , ":" --> "1:7:7:7:7:7:7:7"
 // "^^^**$"     , "x" --> "3x3x3x2x2x1"
 
+function freqSeq(str, sep) {
+    let obj = {};
+    for(const letter of str) {
+        obj[letter] = obj[letter] ? obj[letter] + 1 : 1;
+    }
+    return str.split('').map(e => obj[e]).join(sep);
+}
