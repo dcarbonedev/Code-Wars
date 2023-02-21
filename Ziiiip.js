@@ -16,3 +16,31 @@
 // zipObject()
 // {}
 
+function zipObject(keys, values) {
+    let result = {};
+    
+    // if array(s) are empty return an empty object
+    if(!keys.length && !values) return {};
+    
+    // if values is not empty fill object using keys and values arrays
+    if(values) {
+      for(let i = 0; i < keys.length; i++) {
+        result[keys[i]] = values[i];
+      }
+      return result;
+    }
+    // if the second item in the first "key" array is a number fill object
+    // using only key array
+    if(typeof keys[0][1] === 'number') {
+      for(let i = 0; i < keys.length; i++) {
+        result[keys[i][0]] = keys[i][1];
+      }
+      return result;
+    }
+    // if we make it to this point we use the keys from the key array as object keys
+    // and set their values to undefined
+    for(let i = 0; i < keys.length; i++) {
+      result[keys[i]] = undefined;
+    }
+    return result;
+}
