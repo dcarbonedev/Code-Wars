@@ -82,3 +82,42 @@ function isValid(b) {
   return true;
 }
 
+// ---------------------------------------------------------------------
+// Slightly simpler and more readable solution
+function validateSudoku(board) {
+  let column = [];
+  let box = [];
+  
+  // Check Rows
+  for(let i = 0; i < board.length; i++) {
+    if(!isValid(board[i])) return false;
+  }
+  
+  // Check Columns
+  for(let col = 0; col < 9; col++) {
+    for(let row = 0; row < 9; row++) {
+      column.push(board[row][col]);
+    }
+    if(!isValid(column)) return false;
+    column = [];
+  }
+  
+  // Check Boxes
+  for(let i = 0; i < 27; i++) {
+    if(i < 9) box.push(...board[i].slice(0,3));
+    else if(i >= 9 && i < 18) box.push(...board[i-9].slice(3,6));
+    else if(i >= 18) box.push(...board[i-18].slice(6,9));
+    if((i+1) % 3 === 0) {
+      if(!isValid(box)) return false;
+      box = [];
+    }
+  }
+  return true;
+}
+
+function isValid(arr) {
+  for(let i = 1; i <= 9; i++) {
+    if(!arr.includes(i)) return false;
+  }
+  return true;
+}
