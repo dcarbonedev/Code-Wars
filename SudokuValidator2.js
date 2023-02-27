@@ -39,3 +39,46 @@
 // Rows, columns and blocks (3x3 small squares) must contain each number from range 1-9 exactly once.
 // User solution must not modify input boards.
 
+function validateSudoku(board) {
+  let columns = [];
+  let boxes = [];
+  let temp = [];
+  
+  //Get Columns
+  for(let col = 0; col < 9; col++) {
+    for(let row = 0; row < 9; row++) {
+      temp.push(...[board[row][col]]);
+    }
+    columns.push(temp);
+    temp = [];
+  }
+  
+  // GET BOXES
+  temp = [];
+  for(let i = 0; i < 27; i++) {
+    if(i < 9) temp.push(...board[i].slice(0,3));
+    else if(i >= 9 && i < 18) temp.push(...board[i-9].slice(3,6));
+    else if(i >= 18) temp.push(...board[i-18].slice(6,9));
+    if((i+1) % 3 === 0) {
+      boxes.push(temp);
+      temp = [];
+    }
+  }
+  return isValid(board) && isValid(columns) && isValid(boxes);
+}
+
+function isValid(b) {
+  for(let i = 0; i < 9; i++) {
+    let obj = {};
+    for(let j = 0; j < 9; j++) {
+      if(!obj[b[i][j]] && b[i][j]) {
+        obj[b[i][j]] = 1;
+      }
+    }
+    for(let k = 1; k <= 9; k++) {
+      if(!obj[k]) return false;
+    }
+  }
+  return true;
+}
+
