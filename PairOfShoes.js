@@ -32,3 +32,17 @@
 
 // true if it is possible to pair the shoes, false otherwise.
 
+function pairOfShoes(shoes) {
+  while(shoes.length > 0) {
+    let found = false;
+    for(let i = 1; i < shoes.length; i++) {
+      if(shoes[0][0] !== shoes[i][0] && shoes[0][1] === shoes[i][1]) {
+        shoes.splice(i, 1);
+        shoes.shift();
+        found = true;
+      }
+    }
+    if(!found) return false;
+  }
+  return true;
+}
