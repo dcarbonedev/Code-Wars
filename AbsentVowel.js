@@ -13,3 +13,10 @@
 // "John Doe hs seven red pples under his bsket"          =>  0  ; missing: "a"
 // "Bb Smith sent us six neatly arranged range bicycles"  =>  3  ; missing: "o"
 
+function absentVowel(x){
+    let vowels = 'aeiou';
+    x = x.toLowerCase();
+    for(let i = 0; i < vowels.length; i++) {
+      if(x.indexOf(vowels[i]) === -1) return i;
+    }
+}
