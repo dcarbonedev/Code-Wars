@@ -21,3 +21,13 @@
 //  ..
 //  ...`
 
+function perfectSquare(string) {
+  let arr = string.split('\n');
+  for(let str of arr) {
+    let dots = str.split('').reduce((a,c) => c === '.' ? a+1 : a, 0);
+    if(dots !== arr.length || dots !== str.length) {
+      return false;
+    }
+  }
+  return true;
+}
