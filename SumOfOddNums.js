@@ -21,3 +21,5 @@ function rowSumOddNumbers(n) {
   return sum;
 }
 
+// Much Simpler Solution
+const rowSumOddNumbers = n => n**3;
