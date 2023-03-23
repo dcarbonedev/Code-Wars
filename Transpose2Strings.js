@@ -17,3 +17,10 @@
 // You don't have to modify the case (i.e. no need to change to upper or lower)
 // If one string is longer than the other, there should be a space where the character would be
 
+function transposeTwoStrings (array) {
+  let result = '';
+  for(let i = 0; i < Math.max(array[0].length, array[1].length); i++) {
+    result += (array[0][i] || ' ') +' ' +(array[1][i] || ' ') +'\n'
+  }
+  return result.split('').slice(0, result.length-1).join('');
+}
