@@ -22,3 +22,17 @@
 // or
 // removNb(26) should return "15 21, 21 15"
 
+function removeNb (n) {
+  console.log('n:', n);
+  let result = [];
+  let sum = (n * (n+1)) / 2;
+  console.log('sum:', sum);
+  for(let i = 1; i <= n; i++) {
+    for(let j = 1; j <= n; j++) {
+      if(i*j === sum-(i+j) && i !== j) {
+        result.push([i,j]);
+      }
+    }
+  }
+  return result;
+}
