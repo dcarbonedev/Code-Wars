@@ -18,3 +18,12 @@
 
 // The array elements will all be numbers. The numbers will also all be unique and in ascending order. The numbers could be positive and/or negetive and the gap could be larger than one.
 
+function allNonConsecutive (arr) {
+  let result = [];
+  for(let i = 1; i < arr.length; i++) {
+    if(arr[i] - arr[i-1] > 1) {
+      result.push({'i' : i, 'n' : arr[i]});
+    }
+  }
+  return result;
+}
