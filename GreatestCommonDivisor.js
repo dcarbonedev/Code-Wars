@@ -11,3 +11,8 @@ function mygcd(x,y) {
   }
 }
 
+// recursive solution using Euclidean Algorithm
+function mygcd(a,b) {
+  if(b === 0) return a;
+  return mygcd(b, a % b);
+  }
