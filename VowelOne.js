@@ -10,3 +10,4 @@
 
 // vowelOne( "aeiou, abc" ) // "1111100100"
 
+const vowelOne = s => s.split('').map(e => 'aeiouAEIOU'.includes(e) ? '1' : '0').join('');
