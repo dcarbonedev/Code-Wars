@@ -28,3 +28,7 @@
 // The array could be empty, in that case return the same empty array ¯\_( ツ )_/¯
 // All emotions will be valid
 
+function sortEmotions(arr, order) {
+    let emotes = [':D', ':)', ':|', ':(', 'T_T'];
+    return arr.map(e => emotes.indexOf(e)).sort((a,b) => order ? a-b : b-a).map(e => emotes[e]);
+}
