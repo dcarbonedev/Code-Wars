@@ -25,3 +25,5 @@ function add(...nums) {
     return Math.round(result);
 }
 
+// Codewars style one-liner
+const add = (...nums) => Math.round(nums.reduce((a,c,i) => a + (c / (i+1)) , 0));
