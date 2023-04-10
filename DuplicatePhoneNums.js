@@ -46,3 +46,23 @@
 
 // ["739-9425:6"]
 
+function findDuplicatePhoneNumbers(phoneNumbers) {
+  let numMap = {
+    'a':2, 'b':2, 'c':2, 'd':3, 'e':3, 'f':3, 'g':4, 'h':4, 'i':4, 'j':5, 'k':5, 'l':5,
+    'm':6, 'n':6, 'o':6, 'p':7, 'r':7, 's':7, 't':8, 'v':8, 'u':8, 'w':9, 'x':9, 'y':9
+  };
+  let uniqueNums = {};
+  let result = [];
+  phoneNumbers = phoneNumbers.map(e => e.split('-').join('').toLowerCase());
+  for(let i = 0; i < phoneNumbers.length; i++) {
+    phoneNumbers[i] = phoneNumbers[i].split('').map(e => numMap[e] || e).join('');
+    uniqueNums[phoneNumbers[i]] = uniqueNums[phoneNumbers[i]]+1 || 1;
+  }
+  let keys = Object.keys(uniqueNums);
+  for(let i = 0; i < keys.length; i++) {
+    if(uniqueNums[keys[i]] > 1) {
+      result.push(keys[i].slice(0,3) + '-' + keys[i].slice(3,7) + ':' + uniqueNums[keys[i]]);
+    }
+  }
+  return result;
+}
