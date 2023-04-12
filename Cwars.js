@@ -10,3 +10,4 @@
 
 // Names are separated by exactly one space in the input, without leading or trailing spaces. Names will always be lowercase, except optionally their first letter.
 
+const initials = n => n.split(' ').map((e,i,a) => e[0].toUpperCase() + (i === a.length-1 ? e.slice(1) : '')).join('.');
