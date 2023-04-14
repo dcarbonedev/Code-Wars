@@ -8,3 +8,9 @@
 
 // Complete the function that takes a noun as a string, and returns her preferred band name written as a string.
 
+function bandNameGenerator(str) {
+  if(str[0] === str[str.length-1]) {
+    return str[0].toUpperCase() + str.slice(1, str.length-1) + str;
+  }
+  return 'The ' + str[0].toUpperCase() + str.slice(1);
+}
