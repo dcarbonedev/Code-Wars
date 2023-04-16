@@ -7,3 +7,14 @@
 // n =  10 -> "0001 0000"
 // n = -10 -> "-0001 0000"
 
+function toBcd(number) {
+  if(number === 0) return '0000';
+  let result = '';
+  let negative = number < 0;
+  number = Math.abs(number);
+  while(number > 0) {
+    result = (number % 10).toString(2).padStart(4, '0') +' ' + result;
+    number = Math.floor(number / 10);
+  }
+  return (negative ? '-' : '') + result.trim();
+}
