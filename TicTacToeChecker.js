@@ -13,3 +13,12 @@
 // 0 if it's a cat's game (i.e. a draw).
 // You may assume that the board passed in is valid in the context of a game of Tic-Tac-Toe.
 
+function isSolved(board) {
+  // Check rows and columns
+  for(let i = 0; i < 3; i++) {
+    if(board[i].filter(e => e === 1).length === 3) return 1;
+    if(board[i].filter(e => e === 2).length === 3) return 2;
+    if([board[0][i], board[1][i], board[2][i]].filter(e => e === 1).length === 3) return 1;
+    if([board[0][i], board[1][i], board[2][i]].filter(e => e === 2).length === 3) return 2;
+  }
+}
