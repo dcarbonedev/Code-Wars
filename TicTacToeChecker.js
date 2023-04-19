@@ -14,11 +14,22 @@
 // You may assume that the board passed in is valid in the context of a game of Tic-Tac-Toe.
 
 function isSolved(board) {
-  // Check rows and columns
+  // Check if there's a winner in rows or columns
   for(let i = 0; i < 3; i++) {
     if(board[i].filter(e => e === 1).length === 3) return 1;
     if(board[i].filter(e => e === 2).length === 3) return 2;
     if([board[0][i], board[1][i], board[2][i]].filter(e => e === 1).length === 3) return 1;
     if([board[0][i], board[1][i], board[2][i]].filter(e => e === 2).length === 3) return 2;
   }
+  // Check if there's a winner in diagonals
+  if([board[0][0], board[1][1], board[2][2]].filter(e => e === 1).length === 3) return 1;
+  if([board[0][0], board[1][1], board[2][2]].filter(e => e === 2).length === 3) return 2;
+  if([board[0][2], board[1][1], board[2][0]].filter(e => e === 1).length === 3) return 1;
+  if([board[0][2], board[1][1], board[2][0]].filter(e => e === 2).length === 3) return 2;
+  
+  // Check for zeroes (nobody has won so if there are zeroes the game is incomplete)
+  if([...board[0], ...board[1], ...board[2]].filter(e => e === 0).length > 0) return -1;
+  
+  // If nothing has been returned by this point it's a cat's game so we return zero
+  return 0;
 }
