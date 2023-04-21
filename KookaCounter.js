@@ -22,3 +22,14 @@
 // hahahahahaHaHaHa = female + male => 2
 // HaHaHahahaHaHa = male + female + male => 3
 
+var kookaCounter = function(laughing) {
+  let thing;
+  let count = 0;
+  for(let i = 0; i < laughing.length; i+=2) {
+    if(laughing[i] !== thing) {
+      count++;
+      thing = laughing[i];
+    }
+  }
+  return count;
+}
