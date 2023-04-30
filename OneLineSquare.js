@@ -28,3 +28,4 @@
 // Found this one too easy? This one's a bit more difficult!
 // Too hard? This one's a bit easier :)
 
+sd=x=>+[...''+x].map(n=>n*n).join``
