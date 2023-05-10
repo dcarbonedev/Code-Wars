@@ -8,3 +8,4 @@
 
 // The array will contain a minimum of two elements. Input data range guarantees that max-min will cause no integer overflow.
 
+const betweenExtremes = nums => nums.sort((a,b) => a-b)[nums.length-1] - nums[0];
