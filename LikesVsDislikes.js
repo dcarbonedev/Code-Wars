@@ -13,3 +13,18 @@
 // If no button is currently active, return Nothing.
 // If the list is empty, return Nothing.
 
+function likeOrDislike(buttons) {
+  console.log(buttons);
+  let state = 'Nothing';
+  for (let i = 0; i < buttons.length; i++) {
+    if(buttons[i] === 'Like') {
+      if(state === 'Nothing' || state === 'Dislike') state = 'Like';
+      else state = 'Nothing';
+    }
+    if(buttons[i] === 'Dislike') {
+      if(state === 'Nothing' || state === 'Like') state = 'Dislike';
+      else state = 'Nothing';
+    }
+  }
+  return state;
+}
