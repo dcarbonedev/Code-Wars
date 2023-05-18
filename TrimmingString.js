@@ -12,3 +12,9 @@
 
 // e.g. trim("Code Wars is pretty rad", 50) should return "Code Wars is pretty rad"
 
+function trim(str, size) {
+    if(size >= str.length) return str;
+    if(size <= 3) return str.slice(0, size) + '...';
+    return str.slice(0, size-3) + '...';
+}
+
