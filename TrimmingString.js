@@ -18,3 +18,5 @@ function trim(str, size) {
     return str.slice(0, size-3) + '...';
 }
 
+// Codewars style one liner
+const trim = (s, n) => n >= s.length ? s : s.slice(0, n - (n <= 3 ? 0 : 3)) + '...';
