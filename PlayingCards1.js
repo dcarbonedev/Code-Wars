@@ -40,3 +40,13 @@
 
 // ["KC", "QC", "KD", "QD", "KH", "QH", "KS", "QS"];
 
+const draw = (deck) => {
+	const drawnCards = [];
+  let originalDeckLength = deck.length;
+  
+  while(originalDeckLength > drawnCards.length) {
+    drawnCards.push(deck.shift());
+    deck.push(deck.shift());
+  }
+	return drawnCards;
+};
