@@ -9,3 +9,5 @@ function spacey(array) {
   return result;
 }
 
+// one-liner
+const spacey = a => a.map((_,i) => a.slice(0, i+1).join(''));
