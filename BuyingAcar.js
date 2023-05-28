@@ -33,3 +33,17 @@
 // nbMonths(12000, 8000, 1000, 1.5) should return [0, 4000]
 // nbMonths(8000, 8000, 1000, 1.5) should return [0, 0]
 
+function nbMonths(oldVal, newCost, savings, loss) {
+  loss = loss / 100;
+  let avail = oldVal - newCost;
+  let months = 0;
+  
+  while(avail < 0) {
+    months++;
+    if(months % 2 === 0) loss += 0.005;
+    avail += (newCost * loss) - (oldVal * loss) + savings;
+    oldVal -= (oldVal * loss);
+    newCost -= (newCost * loss);
+  }
+  return [months, Math.round(avail)];
+}
