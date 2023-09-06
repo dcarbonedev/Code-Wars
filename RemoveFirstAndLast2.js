@@ -15,3 +15,8 @@
 // "1"    =>  NULL
 // "1,2"  =>  NULL
 
+function array(string){
+    string = string.split(',');
+    if(string.length < 3) return null;
+    return string.slice(1, string.length-1).join(' ');
+}
