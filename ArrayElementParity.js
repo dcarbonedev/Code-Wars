@@ -16,3 +16,4 @@
 
 // Good luck!
 
+const solve = a => Array.from(new Set(a)).reduce((a,c) => a + c, 0);
