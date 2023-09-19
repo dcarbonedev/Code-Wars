@@ -16,3 +16,14 @@
 
 // Write a function which takes a string (day of the week) and an integer (number to be tested) so it tells the doctor if I'm afraid or not. (return a boolean)
 
+var AmIAfraid = function(day, num) {
+    switch(day) {
+        case 'Monday': return num === 12;
+        case 'Tuesday': return num > 95;
+        case 'Wednesday': return num === 34;
+        case 'Thursday': return num === 0;
+        case 'Friday': return !(num % 2);
+        case 'Saturday': return num === 56;
+        case 'Sunday': return num === 666 || num === -666;      
+    }
+}
