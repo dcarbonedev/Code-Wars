@@ -12,3 +12,12 @@
 
 // For input, you can trust that neither the main list nor the sublists will be empty.
 
+// Traditional for loop
+function processData(data) {
+  let result = 1;
+  for(let i = 0; i < data.length; i++) {
+    result *= (data[i][0] - data[i][1]);
+  }
+  return result;
+}
+
