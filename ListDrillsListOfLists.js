@@ -21,3 +21,5 @@ function processData(data) {
   return result;
 }
 
+//codewars style one-liner using reduce fubction
+const processData = data => data.reduce((a,c) => (c[0] - c[1]) * a, 1);
