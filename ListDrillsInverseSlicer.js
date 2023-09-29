@@ -13,3 +13,4 @@
 // [12, 14, 55, 24]
 // The input will always be a valid list, a and b will always be different integers equal to or greater than zero, but they may be zero or be larger than the length of the list.
 
+const inverseSlice = (items, a, b) => [...items.slice(0, a), ...items.slice(b)];
