@@ -12,3 +12,7 @@
 
 // // Bonus point if you don't use toLowerCase()
 
+function encode(str) {
+    let alpha = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    return str.split('').map(e => alpha.indexOf(e) === -1 ? e : (alpha.indexOf(e) % 26) +1).join('');
+}
