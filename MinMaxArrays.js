@@ -9,3 +9,11 @@
 
 // Good luck!
 
+function solve(arr) {
+  let result = [];
+  while(arr.length > 0) {
+    result.push(arr.splice(arr.indexOf(Math.max(...arr)), 1)[0]);
+    result.push(arr.splice(arr.indexOf(Math.min(...arr)), 1)[0]);
+  }
+  return result.filter(n => n);
+}
