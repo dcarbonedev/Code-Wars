@@ -27,3 +27,12 @@
 // 1 <= s.length <= 2 * 105
 // s consists only of printable ASCII characters.
 
+var isPalindrome = function(s) {
+    let nums = '0123456789';
+    s = s
+        .toLowerCase()
+        .split('')
+        .filter(e => (e.charCodeAt(e) >= 97 && e.charCodeAt(e) <= 122) || (nums.includes(e)))
+        .join('');
+    return s === s.split('').reverse().join('');
+};
