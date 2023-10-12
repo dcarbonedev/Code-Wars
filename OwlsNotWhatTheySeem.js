@@ -13,3 +13,8 @@
 
 // (To be clear, the acceptable characters for the plumage are 8,W,T,Y,U,I,O,A,H,X,V and M.)
 
+function owlPic(text) {
+    let chars = '8WTYUIOAHXVM';
+    text = text.toUpperCase().split('').filter(e => chars.includes(e)).join('');
+    return text + "''0v0''" + text.split('').reverse().join('');
+}
