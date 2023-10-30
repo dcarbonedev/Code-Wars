@@ -6,3 +6,16 @@
 
 // Good Luck!!!
 
+function solve(n) {
+  if(n % 10 !== 0) return -1;
+  let billCount = 0;
+  let denoms = [500, 200, 100, 50, 20, 10];
+  let denomCount = 0;
+  while(n > 0) {
+    let bills = Math.trunc(n / denoms[denomCount]);
+    billCount += bills;
+    n -= bills * denoms[denomCount++];
+  }
+  return billCount;
+}
+
