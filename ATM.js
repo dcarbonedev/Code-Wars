@@ -19,3 +19,14 @@ function solve(n) {
   return billCount;
 }
 
+// more elegant solution
+function solve(n) {
+  if(n % 10 !== 0) return -1;
+  let bills = 0;
+  let denoms = [500, 200, 100, 50, 20, 10];
+  for(let i = 0; i < denoms.length; i++) {
+    bills += Math.trunc(n / denoms[i]);
+    n = n % denoms[i];
+  }
+  return bills;
+}
