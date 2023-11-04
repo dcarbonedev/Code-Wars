@@ -21,3 +21,10 @@
 // 1********9
 // 1*********10
 
+function pattern(n) {
+  let result = '1';
+  for(let i = 1; i < n; i++) {
+    result += '\n1' + '*'.repeat(i) + (i+1);
+  }
+  return result;
+}
