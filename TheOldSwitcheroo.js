@@ -9,3 +9,12 @@
 // vowel2index('') == ''
 // Your function should be case insensitive to the vowels.
 
+// Traditional for loop
+function vowel2index(str) {
+  let result = '';
+  for(let i = 0; i < str.length; i++) {
+    result += 'aeiouAEIOU'.includes(str[i]) ? i+1 : str[i];
+  }
+  return result;
+}
+
