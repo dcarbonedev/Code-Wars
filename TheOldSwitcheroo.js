@@ -18,3 +18,5 @@ function vowel2index(str) {
   return result;
 }
 
+// codewars one-liner using map function
+const vowel2index = str => str.split('').map((e,i) => 'aeiouAEIOU'.includes(e) ? i+1 : e).join('');
