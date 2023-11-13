@@ -9,3 +9,8 @@
 // [5, 2, 2]       => 2
 // [13, 0, -6]     => 0
 
+function closest(arr) {
+    const pos = Math.min(...arr.filter(e => e >= 0));
+    const neg = Math.max(...arr.filter(e => e < 0));
+    return pos < Math.abs(neg) ? pos : pos > Math.abs(neg) ? neg : null;    
+}
