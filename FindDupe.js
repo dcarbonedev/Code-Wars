@@ -13,3 +13,5 @@ function findDup(arr) {
   }
 }
 
+// filter
+const findDup = a => a.filter(e => a.indexOf(e) !== a.lastIndexOf(e))[0];
