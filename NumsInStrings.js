@@ -4,3 +4,15 @@
 
 // Good luck!
 
+function solve(s) {
+  let nums = [];
+  for(let i = 0; i < s.length; i++) {
+    let str = '';
+    while(!isNaN(parseInt(s[i]))) {
+      str += s[i];
+      i++;
+    }
+    nums.push(str);
+  }
+  return Math.max(...nums);
+}
