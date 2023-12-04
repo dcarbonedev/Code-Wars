@@ -9,3 +9,9 @@
 // "12:00:01AM"  -->  "00:00:01"
 // "11:46:47PM"  -->  "23:46:47"
 
+var getMilitaryTime = function(input) {
+  if(input.slice(0,2) === '12') {
+    return input.slice(-2) === 'AM' ? '00' + input.slice(2, -2) : input.slice(0, -2);
+  }
+  return input.slice(-2) === 'PM' ? String(+input.slice(0, 2) + 12) + input.slice(2, -2) : input.slice(0, -2);
+}
